@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 1</title>
+</head>
+
+<script lang="JavaScript">
+
+exit = true;
+
+while (exit = true) {
+
+    var input = window.prompt("Masukkan Angka : ")
+
+    if (input >= 93 && input <= 100)
+    {
+        window.alert("A")
+    }
+    else if (input >= 83 && input <= 92)
+    {
+        window.alert("B")
+    }
+    else if (input >= 75 && input <= 82)
+    {
+        window.alert("C")
+    }
+    else if (input >= 50 && input <= 74)
+    {
+        window.alert("D")
+    }
+    else if (input >= 0 && input <= 49)
+    {
+        window.alert("E")
+    }
+    else if (input == "exit")
+    {
+        document.write("System Exit")
+        break;    
+    }
+    else{
+        window.alert("Undefined")
+    }
+}
+</script>
+
+<body>
+    
+</body>
+</html>

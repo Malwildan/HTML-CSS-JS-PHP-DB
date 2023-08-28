@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 2</title>
+</head>
+
+<script lang="JavaScript">
+
+    function tambah(){
+        var bil1 = document.kirim.bil1.value
+        var bil2 = document.kirim.bil2.value
+
+        document.kirim.hasil.value=(parseInt(bil1)+parseInt(bil2));
+
+
+    }
+
+    function kurang(){
+        var bil1 = document.kirim.bil1.value
+        var bil2 = document.kirim.bil2.value
+
+        document.kirim.hasil.value=(parseInt(bil1)-parseInt(bil2));
+    }
+
+    function perkalian(){
+        var bil1 = document.kirim.bil1.value
+        var bil2 = document.kirim.bil2.value
+
+        document.kirim.hasil.value=(parseInt(bil1)*parseInt(bil2));
+    }
+
+    function pembagian(){
+        var bil1 = document.kirim.bil1.value
+        var bil2 = document.kirim.bil2.value
+
+        document.kirim.hasil.value(parseInt(bil1)/parseInt(bil2));
+    }
+
+
+
+</script>
+<body>
+
+    <form method="post" name="kirim">
+
+    <p>Bilangan 1 <input type="text" name="bil1"><br></p>
+    <p>Bilangan 2 <input type="text" name="bil2"><br></p>
+    <p>Hasil <input type="text" name="hasil"></p>
+
+    <input type="button" value="+" name="+" onclick=tambah()>
+    <input type="button" value="-" name="-" onclick=kurang()>
+    <input type="button" value="*" name="*" onclick=perkalian()>
+    <input type="button" value="/" name="/" onclick=pembagian()>
+    
+    </form> 
+
+</body>
+</html>
